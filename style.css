@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+}
+
+form {
+    max-width: 320px;
+    width: auto;
+    height: 240px;
+    margin: auto;
+    padding: 4rem;
+    background: #fff;
+    border-radius: 10px;
+}
+
+@keyframes golden-light {
+    0% {
+      box-shadow: none;
+    }
+    50% {
+      box-shadow: 0 0 10px 5px gold;
+    }
+    100% {
+      box-shadow: none;
+    }
+  }
+  
+  input[type="password"] {
+    padding: 10px;
+    transition: box-shadow 0.5s ease;
+  }
+  
+  input[type="password"]:not(:focus) {
+    animation: golden-light 5s infinite;
+  }
+
+form label {
+    display: block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-bottom: 1rem;
+}
+
+form input[type=password] {
+    display: block;
+    height: 36px;
+    margin-bottom: 8px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+form ul.helper-text {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #808080;
+}
+
+form ul.helper-text li.valid {
+    color: #1AB23E;
+    text-decoration-line: line-through;
+}
+
+form.valid input {
+    border: 2px solid #1fd34a;
+}
